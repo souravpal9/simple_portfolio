@@ -1,0 +1,433 @@
+/* Add your CSS styling here */
+/* Add your existing CSS styling above */
+
+/* Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  z-index: 999;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Menu Button Styling */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Media Query for Responsive Navbar */
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px; /* Adjust the top position according to your design */
+    right: 10px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-width: 150px; /* Adjust the width according to your design */
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle.active {
+    background-color: #555;
+  }
+
+  /* Adjust the position and size of the menu */
+  .menu.active {
+    position: fixed;
+    top: 60px; /* Adjust the top position to give space for the navbar */
+    left: 10px;
+    right: 10px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+}
+
+/* Rest of your existing CSS */
+
+/* Hero Section Styling */
+.hero {
+  position: relative;
+  height: 400px; /* Set the desired height */
+  overflow: hidden;
+  cursor: pointer; /* Add cursor pointer for manual sliding */
+}
+
+.slider-container {
+  position: relative;
+  max-width: 100%; /* Add maximum width to limit image size */
+  margin: 0 auto; /* Center the container */
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+/* Adjust image size for different screen sizes */
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 200px; /* Adjust the height for mobile view */
+  }
+
+  .slider img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: #fff;
+  font-size: 24px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 20px;
+}
+
+.next-btn {
+  right: 20px;
+}
+
+/* Rest of your existing CSS */
+
+  
+  /* About Section Styling */
+  #about {
+    padding: 40px;
+  }
+  
+  /* Projects Section Styling */
+ /* Add your existing CSS styling above */
+
+/* Projects Section Styling */
+#projects {
+    padding: 40px;
+  }
+  
+  .project-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .project-card img {
+    width: 200px; /* Adjust the image size as needed */
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  
+  .project-info {
+    flex: 1;
+  }
+  
+  .project-info h3 {
+    margin-bottom: 10px;
+  }
+  
+  .project-info p {
+    margin-bottom: 20px;
+  }
+  
+  .read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .read-more:hover {
+    background-color: #555;
+  }
+  
+  /* Rest of your existing CSS */
+  
+  
+  /* Products Section Styling */
+  #products {
+    padding: 40px;
+  }
+  
+  .product-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .product-card img {
+    width: 200px; /* Adjust the image size as needed */
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  
+  .product-info {
+    flex: 1;
+  }
+  
+  .product-info h3 {
+    margin-bottom: 10px;
+  }
+  
+  .product-info p {
+    margin-bottom: 20px;
+  }
+  
+  .read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .read-more:hover {
+    background-color: #555;
+  }
+  
+  /* Skills Section Styling */
+ /* Add your existing CSS styling above */
+
+/* Skills Section Styling */
+/* Add your existing CSS styling above */
+
+/* Skills Section Styling */
+#skills {
+    padding: 40px;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .skill-card {
+    flex: 1 1 300px; /* Adjust the width of each skill card as needed */
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill-card img {
+    width: 100px; /* Adjust the image size as needed */
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  
+  .skill-info {
+    flex: 1;
+  }
+  
+  .skill-info h3 {
+    margin-bottom: 10px;
+  }
+  
+  .skill-info p {
+    margin-bottom: 20px;
+  }
+  
+  .read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .read-more:hover {
+    background-color: #555;
+  }
+  
+  /* Rest of your existing CSS */
+  
+  /* Rest of your existing CSS */
+  
+  
+  /* Resume Section Styling */
+  #resume {
+    padding: 40px;
+  }
+  
+  /* Contact Section Styling */
+  #contact {
+    padding: 40px;
+  }
+  
+/* Add your existing CSS styling above */
+
+/* Feedback Form Section Styling */
+#feedback {
+    padding: 40px;
+  }
+  
+  #feedback h2 {
+    margin-bottom: 20px;
+  }
+  
+  #feedback form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+  }
+  
+  #feedback form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  #feedback form input,
+  #feedback form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #feedback form textarea {
+    resize: vertical;
+  }
+  
+  #feedback form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #feedback form button:hover {
+    background-color: #555;
+  }
+  
+  
+  /* Footer Section Styling */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Media Query for Responsive Navbar */
+  @media screen and (max-width: 768px) {
+    .menu {
+      display: none;
+    }
+  
+    .menu-toggle {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .menu-toggle.active {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 9999;
+    }
+  
+    .menu-toggle.active .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+  
+    .menu-toggle.active .menu li {
+      margin: 20px 0;
+    }
+  }
+  
+  /* Add your existing CSS styling above */
+
+/* Styles for "Read More" functionality */
+.content {
+  max-height: 200px; /* Set the maximum height to show a truncated version */
+  overflow: hidden;
+  position: relative;
+}
+
+.more-text {
+  display: none;
+}
+
+.show-full-text .more-text {
+  display: inline;
+}
+
+/* Rest of your existing CSS */
